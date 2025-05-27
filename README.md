@@ -19,9 +19,8 @@ These results, validated on additional datasets, show statistically significant 
 - [Competing Models](#competing-models)
 - [Proposed Model](#proposed-model)
 - [Getting Started](#getting-started)
-- [MRI Image Samples](#mri-image-samples)
-- [Contributing](#contributing)
-- [License](#license)
+- [MRI Image Samples - Kaggle Dataset](#mri-image-samples---kaggle-dataset)
+
 
 ## Introduction
 
@@ -42,16 +41,16 @@ Alzheimer-disease-prediction/
 │       ├── VGG19.ipynb
 │       └── ViTBiLSTM.ipynb
 ├── PROPOSED MODEL/
-│   └── Dinov2KAN.ipynb
+│   └── DINOV2KAN_Inference.ipynb
+    └── DINOV2KAN_Train.ipynb
+    └── Sample Dataset/
+        └── ADNI
+        └── Kaggle
+        └── OASIS
 ├── Splits/
 │   ├── kaggledataset_split.csv
 │   ├── oasisdataset_split.csv
 │   └── adnidataset_split.csv
-└── Images/
-    └── Representative_Slices.png
-    └── Final_Elaborated_Block_Diagram.png
-
-
 
 
 ```
@@ -79,12 +78,23 @@ To get started with this repository:
 3. **Run the notebooks:** 
    Open Jupyter Notebook or JupyterLab, navigate to the desired model's notebook, and execute the cells to train and evaluate the model.
 
-## MRI Image Samples
+## MRI Image Samples - Kaggle Dataset
 
-![Representative_slices](Images/Representative_slices.png)
+<p>
+  <img src="Images/MildDemented.jpg" alt="Caption 1" width="230"/>
+  <img src="Images/ModerateDemented.jpg" alt="Caption 2" width="230"/>
+  <img src="Images/NonDemented.jpg" alt="Caption 3" width="230"/>
+  <img src="Images/VeryMildDemented.jpg" alt="Caption 4" width="230"/>
+</p>
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+<p>
+  <b>Mild Demented</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Moderate Demented</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Non Demented</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Very Mild Demented</b>
+</p>
+
+
 
 
 
