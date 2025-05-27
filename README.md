@@ -58,6 +58,19 @@ Alzheimer-disease-prediction/
 
 The `COMPETING MODELS` folder includes various well-known deep learning architectures that have been utilized to predict Alzheimer’s disease. Each model is implemented in a Jupyter Notebook and can be executed independently.
 
+| **Model**             | **Citation** |
+|-----------------------|--------------|
+| **AlzNET** | Gazala Mushtaq and K. Veningston. *Alznet: Computational clinical decision support for diagnosing Alzheimer’s disease from MRI images.* In **2023 International Conference on Next Generation Electronics (NEleX)**, pages 1–6. IEEE, 2023. |
+| **HTLML** | Sarang Sharma, Sheifali Gupta, Deepali Gupta, Ayman Altameem, Abdul Khader Jilani Saudagar, Ramesh Chandra Poonia, and Soumya Ranjan Nayak. *HTLML: Hybrid AI based model for detection of Alzheimer’s disease.* *Diagnostics*, 12(8):1833, 2022. |
+| **Modified AlexNet** | Heta Acharya, Rutvik Mehta, and Dheeraj Kumar Singh. *Alzheimer disease classification using transfer learning.* In **2021 5th International Conference on Computing Methodologies and Communication (ICCMC)**, pages 1503–1508. IEEE, 2021. |
+| **Modified Inception** | Sarang Sharma, Sheifali Gupta, Deepali Gupta, Sapna Juneja, Amena Mahmoud, Shaker El-Sappagh, and Kyung-Sup Kwak. *Transfer learning-based modified Inception model for the diagnosis of Alzheimer’s disease.* *Frontiers in Computational Neuroscience*, 16:1000435, 2022. |
+| **VGG-19** | Assmi Ayoub, Benba Achraf, and Jilbab Abdelilah. *Comparative classification of Alzheimer’s disease.* In **2024 IEEE 12th International Symposium on Signal, Image, Video and Communications (ISIVC)**, pages 1–6. IEEE, 2024. |
+| **VGG-16** | Purwono Purwono, Alfian Ma’Arif, Iswanto Suwarno, Iis Setiawan Mangkunegara, Pramesti Dewi, and Endang Setyawati. *Comparison of the performance of CNN transfer learning in the classification of Alzheimer’s disease.* In **2023 International Conference on Information Technology Research and Innovation (ICITRI)**, pages 43–48. IEEE, 2023. |
+| **ResNet-50** | M. Rajendiran, K.P. Sanal Kumar, and S. Anu H. Nair. *Detection of Alzheimer’s disease in MRI images using different transfer learning models and improving the classification accuracy.* *International Journal of Health Sciences*, 6(S3):11851–11869, 2022. |
+| **ResNet-18** | Jayanthi Venkatraman Shanmugam, Baskar Duraisamy, Blessy Chittattukarakkaran Simon, and Preethi Bhaskaran. *Alzheimer’s disease classification using pre-trained deep networks.* *Biomedical Signal Processing and Control*, 71:103217, 2022. |
+| **ViT-BiLSTM** | Taymaz Akan, Sait Alp, and Mohammad Alfrad Nobel Bhuiyan. *Vision transformers and Bi-LSTM for Alzheimer’s disease diagnosis from 3D MRI.* In **2023 Congress in Computer Science, Computer Engineering, & Applied Computing (CSCE)**, pages 530–535. IEEE, 2023. |
+
+
 ### Proposed Model
 
 The `PROPOSED MODEL` folder features the **DINOv2-KAN** hybrid model, which combines vision transformers with Kolmogorov-Arnold Networks to enhance predictive performance. This notebook outlines the architecture, training process, and evaluation metrics.
