@@ -81,8 +81,8 @@ To get started with this repository:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/Alzheimer-disease-prediction.git
-   cd Alzheimer-disease-prediction
+    git clone https://github.com/lahirisoham2004/DINOv2-KAN.git
+    cd DINOv2-KAN
 
 2. **Install the required dependencies:** 
    Make sure you have Python and pip installed, then run:
