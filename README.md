@@ -109,9 +109,6 @@ checkpoint_path = "/kaggle/working/fold_1_best_model.pth"
 ```
 Execute all cells to run inference.
 
-Results will be saved as:
-`{dataset_choice}_inference_results.csv`
-
 ### Configuration Details
 1. Model Architecture Parameters
 ```python
