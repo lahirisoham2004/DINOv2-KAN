@@ -83,27 +83,32 @@ Open `PROPOSED MODEL/DINOV2KAN_Train.ipynb`
 Set your dataset path:
    ```python
    # Choose your dataset
-   dataset_choice = "ADNI"  # Options: "ADNI", "Kaggle", "OASIS"
+   dataset_choice = "Kaggle"  # Options: "ADNI", "Kaggle", "OASIS"
    dataset_path = f"Sample Dataset/{dataset_choice}/"
 ```
 Execute all cells to start training.
 The model checkpoint will be automatically saved at:
 ```python
-checkpoints/{dataset_choice}_best_model.pth
+/kaggle/working/
+├── fold_1_best_model.pth
+├── fold_2_best_model.pth
+├── ...
 ```
+These files represent the best checkpoint (based on accuracy) for each fold.
 ### Step 2: Testing/Inference
 Open `PROPOSED MODEL/DINOV2KAN_Inference.ipynb`
 Set your test dataset path and checkpoint path:
 ```python
 # Use same dataset as training
-dataset_choice = "ADNI"  # Must match your training dataset
+dataset_choice = "Kaggle"  # Must match your training dataset
 test_dataset_path = f"Sample Dataset/{dataset_choice}/"
 ```
 Load the trained model checkpoint
 ```python
-checkpoint_path = f"checkpoints/{dataset_choice}_best_model.pth"
-Execute all cells to run inference.
+checkpoint_path = "/kaggle/working/fold_1_best_model.pth"
 ```
+Execute all cells to run inference.
+
 Results will be saved as:
 `{dataset_choice}_inference_results.csv`
 
