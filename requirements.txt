@@ -1,0 +1,13 @@
+numpy>=1.21.0
+torch>=1.12.0
+torchvision>=0.13.0
+tqdm>=4.64.0
+matplotlib>=3.5.0
+scikit-learn>=1.0.2
+nibabel>=4.0.0
+torchio>=0.18.86
+nilearn>=0.10.0
+transformers>=4.26.0
+pillow>=9.0.0
+joblib>=1.1.0
+pytorch-metric-learning>=1.6.3
