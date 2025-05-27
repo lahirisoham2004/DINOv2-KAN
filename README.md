@@ -170,10 +170,10 @@ preprocess_config = {
 ## MRI Image Samples - Kaggle Dataset
 
 <p>
-  <img src="Images/MildDemented.jpg" alt="Caption 1" width="220"/>
-  <img src="Images/ModerateDemented.jpg" alt="Caption 2" width="220"/>
-  <img src="Images/NonDemented.jpg" alt="Caption 3" width="220"/>
-  <img src="Images/VeryMildDemented.jpg" alt="Caption 4" width="220"/>
+  <img src="Images/MildDemented.jpg" alt="Caption 1" width="150"/>
+  <img src="Images/ModerateDemented.jpg" alt="Caption 2" width="150"/>
+  <img src="Images/NonDemented.jpg" alt="Caption 3" width="150"/>
+  <img src="Images/VeryMildDemented.jpg" alt="Caption 4" width="150"/>
 </p>
 
 <p>
