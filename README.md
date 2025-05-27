@@ -76,8 +76,82 @@ To get started with this repository:
    ```bash
     pip install -r requirements.txt
 3. **Run the notebooks:** 
-   Open Jupyter Notebook or JupyterLab, navigate to the desired model's notebook, and execute the cells to train and evaluate the model.
 
+### Step 1: Training
+
+Open `PROPOSED MODEL/DINOV2KAN_Train.ipynb`
+Set your dataset path:
+   ```python
+   # Choose your dataset
+   dataset_choice = "ADNI"  # Options: "ADNI", "Kaggle", "OASIS"
+   dataset_path = f"Sample Dataset/{dataset_choice}/"
+```
+Execute all cells to start training.
+The model checkpoint will be automatically saved at:
+```python
+checkpoints/{dataset_choice}_best_model.pth
+```
+### Step 2: Testing/Inference
+Open `PROPOSED MODEL/DINOV2KAN_Inference.ipynb`
+Set your test dataset path and checkpoint path:
+```python
+# Use same dataset as training
+dataset_choice = "ADNI"  # Must match your training dataset
+test_dataset_path = f"Sample Dataset/{dataset_choice}/"
+```
+Load the trained model checkpoint
+```python
+checkpoint_path = f"checkpoints/{dataset_choice}_best_model.pth"
+Execute all cells to run inference.
+```
+Results will be saved as:
+`{dataset_choice}_inference_results.csv`
+
+### Configuration Details
+1. Model Architecture Parameters
+```python
+# DinoV2KAN Model Configuration
+model_config = {
+    'num_classes': 3,
+    'dino_model': 'facebook/dinov2-base',  # Options: 'facebook/dinov2-base' or 'facebook/dinov2-large'
+    'freeze_dino': True,
+    'kan_config': {
+        'dim': 768,               # DINOv2 feature dimension
+        'num_heads': 12,
+        'hdim_kan': 768,
+        'mlp_ratio': 4.0,
+        'drop': 0.1,
+        'attn_drop': 0.1,
+        'drop_path': 0.1
+    }
+}
+```
+2. Training Hyperparameters
+```python
+# Training Configuration
+training_config = {
+    'batch_size': 16,
+    'learning_rate': 1e-4,
+    'weight_decay': 1e-5,
+    'num_epochs': 100,
+    'patience': 15,                      # Early stopping patience
+    'optimizer': 'AdamW',
+    'scheduler': 'CosineAnnealingLR',
+    'loss_function': 'CrossEntropyLoss'
+}
+```
+3. Data Preprocessing Parameters
+```python
+# Preprocessing Configuration
+preprocess_config = {
+    'target_size': (224, 224),
+    'skull_strip_threshold': 0.1,
+    'resample_spacing': (1, 1, 1),
+    'num_middle_slices': 50,
+    'normalize_method': 'rescale_intensity',
+    'clip_threshold': 0
+}
+```
 ## MRI Image Samples - Kaggle Dataset
 
 <p>
