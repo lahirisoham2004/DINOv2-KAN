@@ -1,6 +1,8 @@
 # DINOv2KAN: Kolmogorov-Arnold Network with DINOv2 Vision Transformer for Automatic Characterization of Alzheimer’s Disease
 
 This repository contains the implementation and resources for **DINOv2-KAN**, a hybrid deep learning framework that combines the DINOv2 Vision Transformer (ViT) and Kolmogorov-Arnold Network (KAN) for MRI-based diagnosis of Alzheimer’s Disease (AD) with high accuracy.
+**📄 Preprint:** [DINOv2KAN: Kolmogorov-Arnold Network with DINOv2 Vision Transformer for Automatic Characterization of Alzheimer’s Disease](https://drive.google.com/file/d/1qgTlVgdl5Rq9iRpXoARiZVxPcWpqTT_Q/view?usp=sharing)
+
 
 ## Overview
 
